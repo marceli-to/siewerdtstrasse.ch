@@ -1,10 +1,5 @@
-{{ if show_maps }}
-  {{ partial:misc/map zoom="13" }}
-{{ /if }}
-<footer class="text-mint font-seria font-medium leading-[1.3]">
-
+<footer class="text-mint font-seria font-medium leading-[1.3] pt-15 lg:pt-30">
   {{ partial:layout/inner }}
-
   <div class="grid grid-cols-12 gap-16 items-end text-base">
     <div class="col-span-2 md:col-span-1 mb-2">
       {{ partial:icons/logo-marketer class="block w-auto h-100 md:h-120" }}
@@ -21,14 +16,14 @@
         www.cavegn-immobilien.ch
       </div>
     </div>
-    <div class="col-span-3 col-start-3 sm:col-span-5 sm:col-start-3 md:col-span-3 lg:col-span-2 lg:mb-12">
+    <div class="col-span-3 col-start-3 sm:col-span-5 sm:col-start-3 md:col-span-3 lg:col-span-2 lg:mb-15">
       Follow us!<br>
       <a href="https://www.instagram.com/ cavegn_immobilien_zh/" 
         target="_blank" 
         title="Follow us on Instagram!" 
         rel="noopener noreferrer"
-        class="block group">
-        {{ partial:icons/instagram class="md:w-28 h-auto group-hover:rotate-6 transition-transform" }}
+        class="block group mt-2">
+        {{ partial:icons/instagram class="md:w-24 h-auto group-hover:rotate-6 transition-transform" }}
       </a>
     </div>
     <div class="col-span-3 sm:col-span-5 md:col-span-3 md:col-start-10 lg:col-start-11 lg:mb-20">
@@ -36,11 +31,7 @@
       <a href="/datenschutz">Datenschutz</a><br>
     </div>
   </div>
-
-
   {{ /partial:layout/inner }}
-
-
 </footer>
 {{ vite src="resources/js/app.js" }}
 {{ livewire:scripts }}
