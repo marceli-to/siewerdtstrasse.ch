@@ -1,0 +1,32 @@
+<thead class="border-b border-b-white">
+  <tr class="sm:text-sm [&>th]:py-12 [&>th]:align-middle [&>th]:leading-none [&>th]:font-medium">
+    <th class="text-left w-[13%] sm:w-[10%]">Nr.</th>
+    <th class="text-left w-[12%] sm:w-[8%]">Etage</th>
+    <th class="text-left w-[4%]">
+      {{ type == 'basement' || type == 'carpark' ? '&nbsp;' : 'Zi' }}
+    </th>
+    <th class="text-right w-[10%]">
+      <span class="sm:hidden">
+        {{ type == 'carpark' ? '&nbsp;' : 'm<sup class="text-tiny">2</sup>' }}
+      </span>
+      <span class="hidden sm:block">
+        {{ type == 'carpark' ? '&nbsp;' : 'HNF&nbsp;m<sup class="text-tiny">2</sup>' }}
+      </span>
+    </th>
+    <th class="text-right w-[12%] hidden sm:table-cell">
+      {{ type == 'carpark' ? '&nbsp;' : 'Aussen&nbsp;m<sup class="text-tiny">2</sup>' }}
+    </th>
+    <th class="text-right w-[12%] hidden sm:table-cell">
+      {{ type == 'carpark' ? '&nbsp;' : 'Keller&nbsp;m<sup class="text-tiny">2</sup>' }}
+    </th>
+    <th class="text-right w-[10%] sm:w-[17%]">
+      <span class="sm:hidden">Preis</span>
+      <span class="hidden sm:block">Verkaufspreis</span>
+    </th>
+    <th class="text-center w-[13%]">
+      <span class="sm:hidden">Plan</span>
+      <span class="hidden sm:block">Grundriss</span>
+    </th>
+    <th class="text-right w-[14%]">Anmeldung</th>
+  </tr>
+</thead>

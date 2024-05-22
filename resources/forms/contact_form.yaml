@@ -1,0 +1,12 @@
+title: 'Contact form'
+honeypot: webs1te
+email:
+  -
+    id: lv2hk7hm
+    to: m@marceli.to
+    from: no-reply@siewerdtstrasse.ch.local
+    reply_to: no-reply@siewerdtstrasse.ch.local
+    subject: 'Kontaktformular siewerdtstrasse.ch'
+    mailer: smtp
+    html: email/html/contact
+    text: email/text/contact

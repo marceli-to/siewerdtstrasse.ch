@@ -1,0 +1,57 @@
+{{ partial:layout/grid }}
+    
+  {{ partial:layout/span class="hidden lg:block lg:!col-span-5 xl:!col-span-6" }}
+
+  {{ /partial:layout/span }}
+
+  {{ partial:layout/span class="!col-span-full lg:!col-span-7 xl:!col-span-6" }}
+    <h2 class="text-base md:text-md text-white normal-case mb-8">Kellerräume</h2>
+    {{ collection from="objects" as="objects" type:is="keller" }}
+      {{ partial:components/table/table class="mb-40 lg:mb-80" }}
+        {{ partial:components/table/thead type="basement" }}
+        {{ objects }}
+          {{ partial:components/table/trow filterable="false" }}
+            {{ partial:components/table/tcell class="pr-10" }}
+              {{ number }}
+            {{ /partial:components/table/tcell }}
+            {{ partial:components/table/tcell }}
+              {{ floor:label }}
+            {{ /partial:components/table/tcell }}
+            {{ partial:components/table/tcell }}
+              {{ rooms }}
+            {{ /partial:components/table/tcell }}
+            {{ partial:components/table/tcell class="text-right" }}
+              {{ space }}
+            {{ /partial:components/table/tcell }}
+            {{ partial:components/table/tcell class="text-right hidden sm:table-cell" }}
+              {{ space_outer }}
+            {{ /partial:components/table/tcell }}
+            {{ partial:components/table/tcell class="text-right hidden sm:table-cell" }}
+              {{ space_basement }}
+            {{ /partial:components/table/tcell }}
+            {{ partial:components/table/tcell class="text-right" }}
+              {{ price | format_number(0, '.', '\'') }}
+            {{ /partial:components/table/tcell }}
+            {{ partial:components/table/tcell class="text-center" }}
+              <a href="/assets/downloads/wohnen-felsengrund-untergeschoss.pdf" target="_blank" title="Download Grundriss Objekt {{ number }}">
+                {{ partial:icons/download }}
+              </a>
+            {{ /partial:components/table/tcell }}
+              {{ partial:components/table/tcell class="text-right align-middle !pr-0" }}
+                {{ if state == 'available' }}
+                <a href="mailto:hello@siewerdtstrasse.ch?subject=Anmeldung Wohnung {{ number }} | ZOE Siewerdtstrasse Oerlikon"
+                  class="font-medium text-sm md:!text-sm text-white hover:text-charcoal bg-charcoal hover:bg-white transition-all inline-flex items-center px-6 h-26 rounded-sm leading-none">
+                  E-Mail
+                </a>
+                {{ elseif state == 'reserved' }}
+                reserviert
+                {{ else }}
+                verkauft
+                {{ /if }}
+            {{ /partial:components/table/tcell }}
+          {{ /partial:components/table/trow }}
+        {{ /objects }}
+      {{ /partial:components/table/table }}
+    {{ /collection }}
+  {{ /partial:layout/span }}
+{{ /partial:layout/grid }}

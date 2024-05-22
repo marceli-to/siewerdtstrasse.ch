@@ -1,0 +1,40 @@
+{{ partial:layout/section }}
+  {{ partial:components/swiper/wrapper }}
+    {{ partial:components/swiper/slide image="wohnen-felsengrund-visualisierung-aussen-nord" alt="Visualisierung Aussen Nord" }}
+    {{ partial:components/swiper/slide image="wohnen-felsengrund-visualisierung-aussen-sued" alt="Visualisierung Aussen Süd" }}
+    {{ partial:components/swiper/slide image="wohnen-felsengrund-visualisierung-attika-essen" alt="Visualisierung Attika Essen" }}
+    {{ partial:components/swiper/slide image="wohnen-felsengrund-visualisierung-attika-schlafzimmer" alt="Visualisierung Attika Schlafzimmer" }}
+    {{ partial:components/swiper/slide image="wohnen-felsengrund-visualisierung-wohnzimmer-eg" alt="Visualisierung Wohnzimmer EG" }}
+  {{ /partial:components/swiper/wrapper }}
+{{ /partial:layout/section }}
+
+{{ partial:layout/inner }}
+  {{ partial:components/headings/h1 }}
+    Eigentumswohnungen
+  {{ /partial:components/headings/h1 }}
+  <div class="max-w-4xl">
+    {{ partial:components/headings/h2 }}
+      You will Örlike it!
+    {{ /partial:components/headings/h2 }}
+    <p>Ab Sommer 2024 entstehen zwei moderne Mehrfamilienhäuser in grüner Umgebung mit je acht Eigentumswohnungen – drei im Erdgeschoss, drei im Obergeschoss und zwei im Attikageschoss. Es entstehen 3.5- und 4.5-Zimmerwohnungen, ideal für Paare an ruhiger Lage.</p>
+    <p>Die Mehrfamilienhäuser fällt durch ihren <em>modernen Baukörper</em> und die <em>hochwertigen Faserzementplatten-Fassade</em>, die dem Gebäude ein zeitgemässes und ansprechendes Erscheinungsbild verleihen, positiv auf. Dank einer <em>Photovoltaikanlage</em>auf dem Dach wird ein Grossteil des benötigten Stroms umweltfreundlich erzeugt. Die <em>Erdsondenwärmepumpe</em> sorgt für eine effiziente Beheizung im Winter und die passive Nutzung der Wärmepumpe ermöglicht eine angenehme <em>Kühlung im Sommer</em>, ohne zusätzliche Energie zu verbrauchen. Diese innovative Technologie macht die Wohnanlage nicht nur nachhaltig, sondern auch äusserst komfortabel.</p>
+  </div>
+  <div class="mt-15 md:mt-25 md:flex space-y-10 md:space-y-0 md:space-x-15">
+    <div>
+      <a href="/assets/downloads/wohnen-felsengrund-verkaufsplaene.pdf" 
+        target="_blank" 
+        title="Verkaufspläne herunterladen"
+        class="bg-gold rounded-sm font-medium inline-flex text-white uppercase py-12 px-15 tracking-wider leading-none hover:bg-charcoal transition-colors">
+        Verkaufspläne
+      </a>
+    </div>
+    <div>
+      <a href="/assets/downloads/wohnen-felsengrund-umgebungsplan.pdf" 
+        target="_blank" 
+        title="Umgebungsplan herunterladen"
+        class="bg-gold rounded-sm font-medium inline-flex text-white uppercase py-12 px-15 tracking-wider leading-none hover:bg-charcoal transition-colors">
+        Umgebungsplan
+      </a>
+    </div>
+  </div>
+{{ /partial:layout/inner }}
