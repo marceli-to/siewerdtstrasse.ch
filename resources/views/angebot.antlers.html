@@ -1,22 +1,12 @@
-{{ partial:layout/section class="bg-gold"}}
+{{ partial:layout/section }}
 
-  {{ partial:layout/inner class="text-white" }}
+  {{ partial:layout/inner class="pt-25 md:pt-45" }}
 
-    <h1 class="text-white">Angebot</h1>
+  {{ partial:components/headings/h1 title="Angebot" class="!mt-0" }}
 
     {{ partial:objects/filter }}
 
-    <div data-building="1">
-      {{ partial:objects/building_1 }}
-    </div>
-
-    <div data-building="2">
-      {{ partial:objects/building_2 }}
-    </div>
-
-    {{ partial:objects/basement }}
-
-    {{ partial:objects/carpark }}
+    {{ partial:objects/objects }}
 
   {{ /partial:layout/inner }}
 

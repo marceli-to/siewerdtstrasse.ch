@@ -55,17 +55,6 @@ const Filter = (function() {
         if (v.length > 0) {
           attrString += `[data-${k}="${v}"]`;
         }
-
-        if (k == 'object-building') {
-          // hide all data-object-building
-          document.querySelectorAll('[data-building]').forEach(function(item) {
-            item.style.display = 'none';
-          });
-          // show data-object-building with matching data-building
-          document.querySelectorAll(`[data-building="${v}"]`).forEach(function(item) {
-            item.style.display = 'block';
-          });
-        }
       });
       if (attrString.length > 0) {
         console.log(attrString);

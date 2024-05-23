@@ -1,21 +1,21 @@
 {{ partial:layout/grid }}
     
-  {{ partial:layout/span class="hidden lg:block lg:!col-span-5 xl:!col-span-6" }}
-
+  {{ partial:layout/span class="hidden lg:block lg:!col-span-5 2xl:!col-span-6" }}
+    {{ partial:objects/iso class="sticky top-120 w-full h-auto block mb-40 lg:mb-80 py-[12%] -my-[12%] overflow-visible" }}
   {{ /partial:layout/span }}
 
-  {{ partial:layout/span class="!col-span-full lg:!col-span-7 xl:!col-span-6" }}
-    <h2 class="text-base md:text-md text-white normal-case mb-8">Kellerräume</h2>
-    {{ collection from="objects" as="objects" type:is="keller" }}
+  {{ partial:layout/span class="!col-span-full lg:!col-span-7 2xl:!col-span-6" }}
+    {{ partial:components/headings/h2 title="Wohnungen" class="text-md lg:text-2xl !mb-5 lg:!mb-15" }}
+    {{ collection from="objects" as="objects" }}
       {{ partial:components/table/table class="mb-40 lg:mb-80" }}
-        {{ partial:components/table/thead type="basement" }}
+        {{ partial:components/table/thead }}
         {{ objects }}
-          {{ partial:components/table/trow filterable="false" }}
-            {{ partial:components/table/tcell class="pr-10" }}
+          {{ partial:components/table/trow filterable="true" number="{{ number }}" state="{{ state }}" rooms="{{ rooms }}" floor="{{ floor }}" building="1" }}
+            {{ partial:components/table/tcell class="!pr-0" }}
               {{ number }}
             {{ /partial:components/table/tcell }}
-            {{ partial:components/table/tcell }}
-              {{ floor:label }}
+            {{ partial:components/table/tcell class="!pr-4 md:!pr-10" }}
+              {{ floor:label | replace(' ', '&nbsp;') }}
             {{ /partial:components/table/tcell }}
             {{ partial:components/table/tcell }}
               {{ rooms }}
@@ -26,22 +26,19 @@
             {{ partial:components/table/tcell class="text-right hidden sm:table-cell" }}
               {{ space_outer }}
             {{ /partial:components/table/tcell }}
-            {{ partial:components/table/tcell class="text-right hidden sm:table-cell" }}
-              {{ space_basement }}
-            {{ /partial:components/table/tcell }}
             {{ partial:components/table/tcell class="text-right" }}
               {{ price | format_number(0, '.', '\'') }}
             {{ /partial:components/table/tcell }}
             {{ partial:components/table/tcell class="text-center" }}
-              <a href="/assets/downloads/wohnen-felsengrund-untergeschoss.pdf" target="_blank" title="Download Grundriss Objekt {{ number }}">
+              <a href="/assets/downloads/wohnen-felsengrund-wohnung_{{ number }}.pdf" target="_blank" title="Download Grundriss Objekt {{ number }}">
                 {{ partial:icons/download }}
               </a>
             {{ /partial:components/table/tcell }}
               {{ partial:components/table/tcell class="text-right align-middle !pr-0" }}
                 {{ if state == 'available' }}
                 <a href="mailto:hello@siewerdtstrasse.ch?subject=Anmeldung Wohnung {{ number }} | ZOE Siewerdtstrasse Oerlikon"
-                  class="font-medium text-sm md:!text-sm text-white hover:text-charcoal bg-charcoal hover:bg-white transition-all inline-flex items-center px-6 h-26 rounded-sm leading-none">
-                  E-Mail
+                  class="font-medium text-xs lg:!text-xs text-white hover:brightness-110 bg-mint transition-all inline-flex items-center px-5 h-25 rounded-sm leading-none">
+                  Anfrage
                 </a>
                 {{ elseif state == 'reserved' }}
                 reserviert

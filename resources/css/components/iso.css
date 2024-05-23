@@ -1,156 +1,24 @@
-/* Building 1 */
-.iso-b1-1 {
-  font-size: 19px;
-}
-
-.iso-b1-1, .iso-b1-2 {
-  fill: #fff;
-  font-family: Navigo-Light, Navigo;
-  font-weight: 300;
-  isolation: isolate;
-}
-
-.iso-b1-3 {
-  fill: #a2a2a2;
-}
-
-.iso-b1-3, .iso-b1-4, .iso-b1-5, .iso-b1-6, .iso-b1-7 {
-  stroke-linejoin: round;
-}
-
-.iso-b1-3, .iso-b1-4, .iso-b1-5, .iso-b1-7 {
-  stroke: #000;
-  stroke-width: .3px;
-}
-
-.iso-b1-4,
-.iso-b1-5 {
-  fill: #c3b8a3;
-}
-
-.iso-b1-8 {
-  letter-spacing: 0em;
-}
-
-.iso-b1-5 {
-  stroke-linecap: round;
-}
-
-.iso-b1-2 {
-  font-size: 19px;
-}
-
-.iso-b1-9 {
-  letter-spacing: 0em;
-}
-
-.iso-b1-6 {
-  fill: none;
-  stroke: #fff;
-  stroke-width: 1.5px;
-}
-
-.iso-b1-10 {
-  letter-spacing: 0em;
-}
-
-.iso-b1-11 {
-  letter-spacing: 0em;
-}
-
-.iso-b1-12 {
-  letter-spacing: 0em;
-}
-
-.iso-b1-7 {
-  fill: #947f59;
-}
-
-.iso-b1-13 {
-  letter-spacing: 0em;
-}
-
-/* Building 2 */
-.iso-b2-1 {
-  stroke-linecap: round;
-}
-
-.iso-b2-1, .iso-b2-2, .iso-b2-3, .iso-b2-4, .iso-b2-5 {
-  stroke-linejoin: round;
-}
-
-.iso-b2-1, .iso-b2-2, .iso-b2-3, .iso-b2-5 {
-  stroke: #000;
-  stroke-width: .3px;
-}
-
-.iso-b2-1, .iso-b2-5 {
-  fill: #947f59;
-}
-
-.iso-b2-6 {
-  font-size: 19px;
-}
-
-.iso-b2-6, .iso-b2-7 {
-  fill: #fff;
-  font-family: Navigo-Light, Navigo;
-  font-weight: 300;
-  isolation: isolate;
-}
-
-.iso-b2-2 {
-  fill: #a2a2a2;
-}
-
-.iso-b2-3 {
-  fill: #c3b8a3;
-}
-
-.iso-b2-8 {
-  letter-spacing: 0em;
-}
-
-.iso-b2-7 {
-  font-size: 19px;
-}
-
-.iso-b2-9 {
-  letter-spacing: 0em;
-}
-
-.iso-b2-4 {
-  fill: none;
-  stroke: #fff;
-  stroke-width: 1.5px;
-}
-
-.iso-b2-10 {
-  letter-spacing: 0em;
-}
-
-.iso-b2-11 {
-  letter-spacing: 0em;
-}
-
-.iso-b2-12 {
-  letter-spacing: 0em;
-}
-
-.iso-b2-13 {
-  letter-spacing: 0em;
-}
-
+.iso-cls-0{fill:#5F8551;}
+.iso-cls-1{fill:#ECECEC;}
+.iso-cls-2{fill:#50B25F;}
+.iso-cls-3{fill:none;stroke:#000000;stroke-width:0.25;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+.iso-cls-4{fill:#B2B3B3;stroke:#000000;stroke-width:0.25;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+.iso-cls-5{fill:#D7D9D9;stroke:#000000;stroke-width:0.25;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+.iso-cls-6{fill:#878988;stroke:#000000;stroke-width:0.25;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+.iso-cls-7{fill:#B1B2B2;stroke:#000000;stroke-width:0.25;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+.iso-cls-8{fill:#C04145;stroke:#000000;stroke-width:0.25;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+.iso-cls-9{fill:#50BE64;stroke:#000000;stroke-width:0.25;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+.iso-cls-10{fill:#D7D9D9;}
 
 /* State classes */
-.is-active.is-available [class^="iso-b1"],
-.is-active.is-available [class^="iso-b2"] {
-  fill: #7AA240;
+.is-active.is-available [class^="iso-cls-"],
+.is-active.is-available [class^="iso-cls-"] {
+  fill: #50BE64;
 }
 
-.is-active.is-taken [class^="iso-b1"],
-.is-active.is-taken [class^="iso-b2"] {
-  fill: #C05445;
+.is-active.is-taken [class^="iso-cls-"],
+.is-active.is-taken [class^="iso-cls-"] {
+  fill: #C04145;
 }
 
 [data-iso]:hover {
