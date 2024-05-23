@@ -1,0 +1,15 @@
+<select 
+  name="{{ field }}"  
+  class="!outline-none bg-mint rounded-sm text-white px-8 py-10 pr-20 w-full appearance-none bg-[url(../icons/chevron-down.svg)] bg-[length:15px_auto] bg-[right_.5rem_center] bg-no-repeat bg-right">
+  <option value="NULL">{{ placeholder }}</option>
+  {{ if field == 'size' }}
+    <option value="2.5" {{ value == '2.5' ? 'selected' : ''}}>2.5 Zimmer</option>
+    <option value="3.5" {{ value == '3.5' ? 'selected' : ''}}>3.5 Zimmer</option>
+    <option value="4.5" {{ value == '4.5' ? 'selected' : ''}}>4.5 Zimmer</option>
+  {{ /if }}
+  {{ if field == 'number' }}
+    {{ collection:objects }}
+      <option value="{{ number }}" {{ value == number ? 'selected' : ''}}>{{ number }}</option>
+    {{ /collection:objects }}
+  {{ /if }}
+</select>

@@ -8,7 +8,7 @@ const initMap = () => {
   var map = new mapboxgl.Map({
       container: 'map',
       style: 'mapbox://styles/marcelitoooo/ck16ms7m51nlo1cmwnqrbjuyq?optimize=true',
-      center: [8.794962809625000,47.365660726960200],
+      center: [8.549060044180237,47.412181699087625], 
       zoom: zoom
   });
   map.addControl(new mapboxgl.NavigationControl());
@@ -20,7 +20,7 @@ const initMap = () => {
       type: 'Feature',
       geometry: {
         type: 'Point',
-        coordinates: [8.794962809625000,47.365660726960200]
+        coordinates: [8.549060044180237,47.412181699087625]
       },
       properties: {
         title: 'ZOE Siewerdtstrasse Oerlikon',

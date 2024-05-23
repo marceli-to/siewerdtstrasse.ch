@@ -55,6 +55,3 @@ preferences:
         - name
         - email
         - location
-  assets:
-    assets:
-      mode: grid

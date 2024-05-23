@@ -1,22 +1,17 @@
 {{ partial:layout/section }}
 
-  {{ partial:components/media/visual image="wohnen-felsengrund-visualisierung-aussen-nord" alt="Visualisierung Aussen Nord" }}
+  {{ partial:components/media/visual image="zoe-siewerdstrasse-5" alt="" }}
 
 {{ /partial:layout/section }}
-
 
 {{ partial:layout/section }}
 
   {{ partial:layout/inner }}
-
-    {{ partial:components/headings/h1 }}
-      Wohnen
-    {{ /partial:components/headings/h1 }}
+  
+    {{ partial:components/headings/h1 title="Wohnen" }}
 
     <div class="max-w-3xl">
-      {{ partial:components/headings/h2 }}
-        Wohnungen
-      {{ /partial:components/headings/h2 }}
+      {{ partial:components/headings/h2 title="Wohnungen" }}
       <p>Vom Erdgeschoss bis ins 5. Obergeschoss sind jeweils drei Wohnungen rund um das zentrale Treppenhaus angeordnet. Jede Wohnung bietet private Aussenräume, wobei die Einheiten im Erdgeschoss einen exklusiven Gartenanteil zur alleinigen Nutzung haben. Perfekt für entspannte Sommerabende mitten im urbanen Oerlikon. Im Attikageschoss befinden sich zwei Wohnungen, die mit beeindruckenden und aussergewöhnlichen Terrassen punkten und einen fantastischen Blick über die Dächer von Oerlikon bieten.</p>
       <p>Beim Ausbau der Wohnungen zieht sich ein durchgängiges Konzept wie ein roter Faden durch das Design, das durch die individuelle Note jedes Bewohners perfekt ergänzt werden kann. Die Räume in den Wohnungen sind vielseitig und flexibel möblierbar, was eine kreative Kombination von Farben und Materialien ermöglicht.</p>
       <p>Die Innenausstattung der Wohnungen – von den Böden über die Küchen bis hin zu den Sanitärinstallationen – ist komplett den Käuferinnen und Käufern überlassen. Eine detaillierte Übersicht der einzelnen Budgetpositionen können dem Kurzbaubeschrieb entnommen werden.</p>
@@ -26,7 +21,7 @@
         <a href="" 
           target="_blank" 
           title="Kurzbaubeschrieb herunterladen"
-          class="bg-mint text-white px-15 py-10 lg:px-16 lg:py-12 rounded-sm uppercase font-seria tracking-wider flex items-center justify-center hover:bg-charcoal transition-all">
+          class="bg-mint text-white px-15 py-10 lg:px-16 lg:py-12 rounded-sm uppercase font-seria tracking-wider flex items-center justify-center hover:brightness-110 transition-all">
           <span class="block leading-none">Kurzbaubeschrieb</span>
         </a>
       </div>
@@ -36,8 +31,90 @@
 
 {{ /partial:layout/section }}
 
-
 {{ partial:layout/section }}
+  {{ partial:components/swiper/wrapper }}
+    {{ partial:components/swiper/slide image="zoe-siewerdstrasse-1" alt="" }}
+    {{ partial:components/swiper/slide image="zoe-siewerdstrasse-2" alt="" }}
+    {{ partial:components/swiper/slide image="zoe-siewerdstrasse-3" alt="" }}
+  {{ /partial:components/swiper/wrapper }}
+{{ /partial:layout/section }}
+
+{{ partial:layout/section class="bg-mint text-white" }}
+  {{ partial:layout/inner }}
+
+    {{ partial:components/headings/h2 class="text-white" title="Lage" }}
+
+    {{ partial:layout/grid }}
+
+      {{ partial:layout/span }}
+        <p>Die Siewerdtstrasse verbindet urbanes Leben mit entspanntem Wohnen in Ruhe an unschlagbarer, erstklassiger Top-Lage. Nebst Zürichs beliebtester Kulturmeile befinden sich zahlreiche Einkaufsmöglichkeiten, trendige Restaurants, angesagte Bars und gemütliche Cafés sowie der legendäre Wochenmarkt.</p>
+        <p>Oerlikon ist einer der lebendigsten und angesagtesten Stadtteile Zürichs! Mit einer gelungenen Mischung aus urbanem Flair und gemütlichen Trubel und Nachbarschaftsatmosphäre, bietet Oerlikon seinen Bewohnern ein einzigartiges Wohn- und Lebensgefühl.</p>
+        <p>Die Lage spricht für sich: Zentral und gut angebunden, ist Oerlikon der ideale Ausgangspunkt, um das Beste aus der pulsierenden Metropole Zürichs zu erleben. Mit exzellenter Anbindung an den öffentlichen Nahverkehr, einschliesslich Bussen, Strassenbahnen und S-Bahnen, sind die Möglichkeiten grenzenlos. In nur wenigen Minuten erreichen Sie das Stadtzentrum, den Flughafen oder andere beliebte Ziele in der Umgebung sowie auch International!</p>
+        <p>Insgesamt bietet Oerlikon ein dynamisches und vielseitiges Umfeld, das sowohl für Alleinstehende, Paare als auch für kleine Familien attraktiv ist. Eine Vielzahl von Kultur-, Event-, Freizeit- und Sportangeboten befindet sich direkt vor der Haustüre und können bequem zu Fuss erreicht werden. Entdecken Sie die Vorzüge dieses lebendigen Stadtteils und lassen Sie sich von seinem Charme verzaubern!</p>
+        <div class="my-20 lg:my-40">
+          {{ partial:components/headings/h3 class="text-white" title="Distanzen" }}
+          <table class="w-full border-t border-t-white  table">
+            <tr class="table-row border-b border-b-white [&>td]:pt-4 [&>td]:pb-2">
+              <td>Bahnhof Oerlikon</td>
+              <td class="text-right">7 Minuten zu Fuss</td>
+            </tr>
+            <tr class="table-row border-b border-b-white [&>td]:pt-4 [&>td]:pb-2">
+              <td>Zürich HB</td>
+              <td class="text-right">13 Minuten mit dem Zug</td>
+            </tr>
+            <tr class="table-row border-b border-b-white [&>td]:pt-4 [&>td]:pb-2">
+              <td>Autobahn</td>
+              <td class="text-right">10 Minuten mit dem Auto</td>
+            </tr>
+            <tr class="table-row border-b border-b-white [&>td]:pt-4 [&>td]:pb-2">
+              <td>Messe/Hallenstadion</td>
+              <td class="text-right">3 Minuten zu Fuss</td>
+            </tr>
+            <tr class="table-row border-b border-b-white [&>td]:pt-4 [&>td]:pb-2">
+              <td>Einkaufen</td>
+              <td class="text-right">5 Minuten zu Fuss</td>
+            </tr>
+            <tr class="table-row border-b border-b-white [&>td]:pt-4 [&>td]:pb-2">
+              <td>Restaurants</td>
+              <td class="text-right">4 Minuten zu Fuss</td>
+            </tr>
+            <tr class="table-row border-b border-b-white [&>td]:pt-4 [&>td]:pb-2">
+              <td>Sportanlage mit Hallenbad</td>
+              <td class="text-right">10 Minuten zu Fuss</td>
+            </tr>
+            <tr class="table-row border-b border-b-white [&>td]:pt-4 [&>td]:pb-2">
+              <td>Apotheke</td>
+              <td class="text-right">6 Minuten zu Fuss</td>
+            </tr>
+            <tr class="table-row border-b border-b-white [&>td]:pt-4 [&>td]:pb-2">
+              <td>Spital</td>
+              <td class="text-right">10 Minuten mit dem Auto</td>
+            </tr>
+          </table>
+        </div>
+        <div>
+          <a href="https://maps.app.goo.gl/6xzdLZnPeGXB4nQu7" 
+            target="_blank" 
+            title="Google Maps öffnen"
+            class="bg-white text-mint px-15 py-10 lg:px-16 lg:py-12 rounded-sm uppercase font-seria tracking-wider inline-flex items-center justify-center hover:bg-charcoal hover:text-white transition-all">
+            <span class="block leading-none">Google Maps</span>
+          </a>
+        </div>
+      {{ /partial:layout/span }}
+
+      {{ partial:layout/span class="flex flex-col gap-y-16 lg:gap-y-32" }}
+        {{ partial:components/media/image image="zoe-siewerdstrasse-8" alt="" }}
+        {{ partial:components/media/image image="zoe-siewerdstrasse-9" alt="" }}
+        {{ partial:components/media/image image="zoe-siewerdstrasse-10" alt="" }}
+      {{ /partial:layout/span }}
+
+    {{ /partial:layout/grid }}
+
+  {{ /partial:layout/inner }}
+
+{{ /partial:layout/section }}
+
+{{ partial:layout/section class="bg-mint" }}
 
   {{ page_elements }}
     {{ partial:elements }}

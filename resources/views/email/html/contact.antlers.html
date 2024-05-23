@@ -6,7 +6,7 @@
       {{ if display != 'Privacy' }}
         <tr>
           <td>{{ display }}</td>
-          <td>{{ value ?? '–' }}</td>
+          <td>{{ value && value != 'NULL' ? value : '–' }}</td>
         </tr>
       {{ /if }}
     {{ /fields }}

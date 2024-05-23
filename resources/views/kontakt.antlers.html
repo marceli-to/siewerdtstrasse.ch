@@ -1,21 +1,16 @@
-{{ partial:layout/section class="bg-gold"}}
+{{ partial:layout/section }}
+
+  {{ partial:components/media/visual image="zoe-siewerdstrasse-3" alt="" }}
   
-  {{ partial:layout/inner class="text-white" }}
+{{ /partial:layout/section }}
 
-    {{ partial:layout/grid }}
+{{ partial:layout/section }}
+  
+  {{ partial:layout/inner }}
 
-      {{ partial:layout/span }}
-
-        <h1 class="text-white">Kontaktformular</h1>
-
-        <h3 class="text-white mb-10">Herzlichen Dank für Ihr Interesse</h3>
-
-        <p>Gerne stehen wir für Fragen zur Verfügung und freuen uns auf Ihre Kontaktaufnahme.</p>
-
-      {{ /partial:layout/span }}
-
-    {{ /partial:layout/grid }}
-
+  {{ partial:components/headings/h1 title="Kontakt" }}
+  {{ partial:components/headings/h2 title="Herzlichen Dank für Ihr Interesse" }}
+  <p>Gerne stehen wir für Fragen zur Verfügung und freuen uns auf Ihre Kontaktaufnahme.</p>
 
     {{ form:contact_form class="mt-20 md:mt-40 max-w-5xl" }}
 
@@ -30,7 +25,17 @@
       {{ /if }}
 
       <input type="text" name="webs1te" class="hidden" />
-      {{ partial:layout/grid class="sm:gap-16 lg:!gap-24" }}
+      {{ partial:layout/grid class="sm:gap-16 lg:!gap-20" }}
+
+        {{ partial:layout/span }}
+          {{ partial:components/forms/elements/select field="size" placeholder="Wohnungsgrösse" value="{{ old:size }}" error="{{ error:size ? true : false }}" }}
+        {{ /partial:layout/span }}
+
+        {{ partial:layout/span }}
+          {{ partial:components/forms/elements/select field="number" placeholder="Wohnungsnummer" value="{{ old:number }}" error="{{ error:number ? true : false }}" }}
+        {{ /partial:layout/span }}
+
+
         {{ partial:layout/span }}
           {{ partial:components/forms/elements/field field="firstname" placeholder="Vorname*" value="{{ old:firstname }}" error="{{ error:firstname ? true : false }}" }}
         {{ /partial:layout/span }}
@@ -56,7 +61,7 @@
         {{ /partial:layout/span }}
 
         {{ partial:layout/span class="!col-span-full" }}
-          {{ partial:components/forms/elements/textarea field="message" placeholder="Nachricht*" }}
+          {{ partial:components/forms/elements/textarea field="message" placeholder="Nachricht" }}
         {{ /partial:layout/span }}
 
         {{ partial:layout/span class="!col-span-full mb-25 md:mb-10" }}

@@ -43,10 +43,13 @@ tabs:
             handle: floor
             field:
               options:
-                ug: UG
                 eg: EG
                 1.og: '1. OG'
                 2.og: '2. OG'
+                3.og: '3. OG'
+                4.og: '4. OG'
+                5.og: '5. OG'
+                attika: Attika
               taggable: false
               push_tags: false
               multiple: false
@@ -66,6 +69,7 @@ tabs:
             handle: rooms
             field:
               options:
+                '2.5': '2.5'
                 '3.5': '3.5'
                 '4.5': '4.5'
               taggable: false

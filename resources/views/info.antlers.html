@@ -1,94 +1,56 @@
 {{ partial:layout/section }}
+  {{ partial:components/media/visual image="zoe-siewerdstrasse-3" alt="" }}
+{{ /partial:layout/section }}
+
+{{ partial:layout/section }}
   
   {{ partial:layout/inner }}
   
-    <h1>Kurzbaubeschrieb</h1>
+  {{ partial:components/headings/h1 title="Informationen" }}
+
+  {{ partial:components/headings/h2 title="Konditionen & Informationen" class="lg:max-w-[50%]" }}
 
     {{ partial:layout/grid }}
 
-      {{ partial:layout/span }}
-        <h3>Allgemeines</h3>
-        <p>Das Mehrfamilienhaus ist modern konzipiert und die Wohnungen gut möbelierbar. Der Standard der Ausstattungen ist hochwertig. Abweichungen innerhalb des Farb- und Materialkonzepts sowie geringfügige Änderungen der Grundrisse bleiben vorbehalten. Die Bauweise und die Innenausstattung entsprechen den heutigen Anforderungen. Insbesondere werden die SIA-Normen 181 bezüglich Schallschutz im Hochbau sowie die behördlichen Vorschriften für Wärmedämmung erfüllt. Die Wohnungen können durch die Käufer individuell umgestellt werden, wenn dies statisch, technisch und bauphysikalisch möglich ist. Die Möblierungen sind als Beispiele zu verstehen und sind im Kaufpreis nicht inbegriffen.</p>
-        <h3>Tragstruktur</h3>
-        <p>Erdberührte Aussenwände in wasserdichtem Beton «weisse Wanne». Untergeschosstrennwände in Kaltsandstein/Beton, Obergeschosstrennwände in Bachstein/Beton. Geschossdecken und Treppenhauswände in Beton.</p>
-        <h3>Bedachung</h3>
-        <p>Flachdachkonstruktion als Systemflachdach mit Dampfbremse, Wärmedämmung, Wasserabdichtung sowie extensive Begrünung. Flachdach über Attika mit PV-Anlage.</p> 
-        <h3>Balkone, Terrassen, Gartensitzplätze</h3>
-        <p>Die begehbaren Terrassen, Balkone und Sitzplätze werden mit Keramikplatten verlegt.</p>
-        <h3>Fassade</h3>
-        <p>Vorgehängte, hinterlüftete Fassade, bekleidet mit Faserzementplatten «Swisspearl». Ein äussert nachhaltige, dauerhafte, wetterbeständige und weitgehend unterhaltsarme Konstruktion mit hochwertiger, mineralischer Wärmedämmung.</p>
-        <h3>Türen und Tore</h3>
-        <p>Haupteingangstüre aus Metall mit Verglasung. Elektrisches Garagenkipptor aus Metall.</p>
-        <h3>Fenster</h3>
-        <p>Holz-Metall Fenster mit dreifach Isolierverglasung. Je Wohnung ein Zugang auf Sitzplatz/Balkon/Terrassen mit Hebeschiebetüre.</p> 
-        <h3>Sonnenschutz</h3>
-        <p>Rafflamellenstoren mit Motorantrieb bei allen Fenstern. Für die Beschattung der Balkone, Sitzplätze und Terrassen sorgen Horizontalmarkisen. Attika mit offener Pergola. Alle Storen mit elektrischer Bedienung.</p>
-        <h3>Elektroinstallationen</h3>
-        <p>Glasfaseranschluss bis in die Wohnungen geführt. LED-Beleuchtung der Allgemeinräume wie Einstellhalle und Treppenhäuser, Pollerleuchten für die Umgebung. Die Wohnungen verfügen im Entrée- Nasszellen- und Küchenbereich über moderne LED-Deckeneinbauleuchten, genügend Schalter und Steckdosen sowie Multimedia-Steckdosen. Balkone, Sitzplätze und Terrassen mit Aussensteckdosen. Video-Sonnerie mit Gegensprechanlage. Sämtliche Parkplätze in der Tiefgarage werden mit E-Mobility ausgerüstet (Grundinstallation). Photovoltaikanlage auf dem Flachdach für die Stromproduktion des Gebäudes.</p> 
-        <div class="mt-20 md:mt-30 md:flex space-y-10 md:space-y-0 md:space-x-15">
-          <div>
-            <a href="/assets/downloads/wohnen-felsengrund-kurzbaubeschrieb.pdf" 
-              target="_blank" 
-              title="Kurzbaubeschrieb herunterladen"
-              class="bg-gold rounded-sm font-medium inline-flex text-white uppercase py-12 px-15 tracking-wider leading-none hover:bg-charcoal transition-colors">
-              Kurzbaubeschrieb
-            </a>
-          </div>
-        </div>
-      {{ /partial:layout/span }}
+    {{ partial:layout/span }}
+      {{ partial:components/headings/h3 class="text-mint" title="Termine" }}
+      <p>Baubeginn ist im Herbst 2024, die Fertigstellung im Frühjahr 2026 geplant. Der genaue Bezugstermin wird der Käuferschaft vier Monate im Voraus mitgeteilt.</p>
+      
+      {{ partial:components/headings/h3 class="text-mint" title="Verkaufspreise" }}
+      <p>Es gelten die Verkaufspreise gemäss Preisliste. Sie verstehen sich als Pauschalpreise für die schlüsselfertigen Wohnungen inklusive Miteigentumsanteile am Land gemäss Baubeschrieb und Vertragsunterlagen (inkl. Vertragspläne).</p>
+      
+      {{ partial:components/headings/h3 class="text-mint" title="Kauf- und Zahlungsabwicklung" }}
+      <ul>
+        <li>Beim Abschluss der Reservation ist eine Anzahlung von CHF 50’000.– zu leisten. Diese Anzahlung wird weder verzinst noch sichergestellt.</li>
+        <li>Bei der öffentlichen Beurkundung des Kaufvertrages sind 20% (abzüglich der Reservationszahlung) des Kaufpreises zu überweisen.</li>
+        <li>Die Restkaufpreissumme von 80% ist bei der Eigentumsübertragung zu begleichen.</li>
+        <li>Allfällige Mehrkosten sind vor der Eigentumsübertragung zu begleichen.</li>
+      </ul>
+      <p>Bei der Beurkundung muss das Zahlungsversprechen eines in der Schweiz domizilierten Finanzierungsinstitutes über den gesamten Kaufpreis vorliegen.</p>
+      
+      {{ partial:components/headings/h3 class="text-mint" title="Notariatskosten" }}
+      <p>Notariats- und Grundbuchkosten werden je zur Hälfte vom Verkäufer und Käufer übernommen. Kosten für allfällige Pfandrechtserrichtung sind vom Käufer zu tragen.</p>
 
-      {{ partial:layout/span }}
-        <h3>Heizung</h3>
-        <p>Für die Wärmeerzeugung ist eine Erdwärmepumpe vorgesehen. Die Niedertemperatur Fussbodenheizung verteilt die Wärme in der ganzen Wohnung. Ein Kühlbetrieb der Fussbodenheizung sorgt im Sommer für angenehme Temperaturen. Individuelle Wärmemessung und Raumtemperatur-Regelung pro Zimmer. Raumtemperaturen nach SIA-Norm.</p>
-        <h3>Lüftung</h3>
-        <p>Die Wohnungen werden natürlich via Fenster gelüftet. Die Nasszellen werde mittels Einzelraumlüftungsgeräten entlüftet. Küchen mit Umluftabzug und Aktivkohlefilter. Die gefangenen Kellerräume werden mechanisch belüftet und entfeuchtet. Die Garagenlüftung erfolgt mechanisch über eine Lüftungsanlage.</p>
-        <h3>Sanitäre Apparate</h3>
-        <p>Hochwertige und moderne Sanitärapparate, Armaturen, Glastrennwände und Unterbaumöbel gemäss Budgetliste. Jede Wohnung mit Waschmaschine und Wäschetrockner der Marke V-ZUG Adora. Entkalkungsanlage mittels Enthärtungsanlage (Regeneriersalz) vor Hauptverteilung installiert.</p>
-        <h3>Kücheneinrichtung</h3>
-        <p>Qualitativ hochwertige in der Schweiz gefertigte Schreinerküche gemäss Budgetliste. Fronten und Sichtseiten in modernen Kunstharzoberflächen. Arbeitsplatten/Abdeckungen in Naturstein. Schubladen mit Dämpfungssystem. Oberbauleuchten mittels LED-Spots. Küchengeräte V-ZUG.</p>
-        <h3>Aufzüge</h3>
-        <p>Rollstuhlgängiger Personenaufzug mit elektromechanischem Antrieb und Notrufsystem.</p>
-        <h3>Geländer</h3>
-        <p>Allgemeine Metallbauarbeiten/Schlosserarbeiten gemäss bewilligtem Farb- und Materialkonzept bzw. gemäss vorgaben Architekt.</p>
-        <h3>Schreinerarbeiten</h3>
-        <p>Wohnungseingangstüren EI30 mit Volltürblatt, Dreipunkteverriegelung, Sicherheitszylinder und Spion. Zimmertüren mit Volltürblätter, Kunstharzbeschichtet, stumpfeinschlagend.<br>Stahlzargen mit dreiseitiger Gummidichtungen. Einbauschränke und Garderoben gemäss Budgetliste.</p>
-        <h3>Bodenbeläge</h3>
-        <p>Einstellhalle mit Hartbetonbelag. Kellerräume mit Zementüberzug. Treppenhaus mit hochwertigem Teppichbelag. Nasszellen mit keramischen Platten, Küchen, Wohn- und Schlafräume mit Parkett gemäss Budgetliste.</p>
-        <h3>Wandbeläge/Decken</h3>
-        <p>Sämtliche Wände und Decken in den Wohnräumen mit Abrieb resp. Weissputz gestrichen. In den Nasszellen im Nassbereich mit raumhohem Plattenbelag gemäss Budgetliste.</p>
-        <h3>Umgebung</h3>
-        <p>Hochwertige Umgebungsgestaltung mit einheimischer Bepflanzung gemäss Landschaftsarchitekt.</p>
-      {{ /partial:layout/span }}
+      {{ partial:components/headings/h3 class="text-mint" title="Im Kaufpreis enthalten" }}
+      <p>Im Kaufpreis inbegriffen sind alle Arbeiten und Lieferungen, die zur schlüsselfertigen Erstellung der Vertragsobjekte erforderlich sind. Der Kaufpreis umfasst alle auf die Gebäudeteile, Anlagen und Einrichtungen anfallenden Bauvorbereitungs-, Gebäude-, Umgebungs-, Reinigungs- und Räumungskosten mit Einschluss sämtlicher Honorare, Baunebenkosten wie Anschluss- und weitere Gebühren, Versicherungskosten, Vermessungs- und Vermarktungskosten inkl. der Gebäudeaufnahme, Zinsen und Spesen aller Art.</p>
 
+    {{ /partial:layout/span }}
+
+    {{ partial:layout/span }}
+      {{ partial:components/headings/h3 class="text-mint" title="Im Kaufpreis nicht enthalten" }}
+      <p>Die Einrichtungsgegenstände haben im Verkaufsdossier nur darstellenden Charakter und sind im Kaufpreis nicht enthalten.</p>
+
+      {{ partial:components/headings/h3 class="text-mint" title="Käuferwünsche" }}
+      <p>Kosten für zusätzliche Leistungen, Bestellungsänderungen oder Sonderwünsche, die von der Standardausführung abweichen und weder im Bau- und Leistungsbeschrieb noch in den Vertragsunterlagen enthalten sind, werden nach Aufwand in Rechnung gestellt. Kosten für Architektur und Ingenieure aufgrund von Planungsänderungen resp. für Änderungs- und/oder Zusatzwünsche der Käuferschaft werden vorab ermittelt und pauschaliert.</p>
+
+      {{ partial:components/headings/h3 class="text-mint" title="Sonstiges" }}
+      <p>Bei einer allfälligen Käufervermittlung durch Dritte entsteht weder gegenüber der veräussernden/erstellenden Partei noch gegenüber dem Interessenten Anspruch auf Ausrichtung einer Provision.</p>
+      <p>&nbsp;</p>
+      <p>Die Informationen in dieser Verkaufsdokumentation basieren auf dem derzeitigen Projektstand. Kleine Änderungen sowie der Zwischenverkauf bleiben vorbehalten. Fotos, Visualisierungen und Skizzen haben den Zweck, einen Eindruck des Objekts zu vermitteln. Für Ausführungen und Flächenangaben sind nur der detaillierte Baubeschrieb und die Pläne im Massstab 1:100 massgebend. Preisänderungen bleiben ausdrücklich vorbehalten.</p>
+    {{ /partial:layout/span }}
 
     {{ /partial:layout/grid }}
 
   {{ /partial:layout/inner }}
-
-{{ /partial:layout/section }}
-
-{{ partial:layout/section class="bg-gold"}}
-  
-  {{ partial:layout/inner class="text-white" }}
-  
-    <h2 class="text-white">Weitere Informationen</h2>
-
-    {{ partial:layout/grid }}
-
-      {{ partial:layout/span }}
-        <h3 class="text-white">Baunebenkosten</h3>
-        <p>Alle Baunebenkosten, Anschlussgebühren, Versicherungen und Honorare.</p>
-        <h3 class="text-white">Hinweis</h3>
-        <p>Aus den Verkaufsunterlagen enthaltenen Plänen, Visualisierungen und Angaben können keinerlei Ansprüche abgeleitet werden. Insbesondere kommt den Plänen keine gesetzliche Wirkung von Grundbuchplänen zu. Für Ausführungen und Flächenangaben sind der detaillierte Baubeschrieb und die Pläne im Massstab 1:50 massgebend. Ausführungsbedingte Änderungen, Anpassungen und/oder Massabweichungen können vorkommen und bleiben jederzeit ausdrücklich vorbehalten.</p>
-      {{ /partial:layout/span }}
-
-      {{ partial:layout/span }}
-        <h3 class="text-white">Zahlungsmodus</h3>
-        <p>CHF 40’000.00 bei Unterzeichnung des Reservationsvertrages, 20% vom Verkaufspreis inkl. Anzahlung bei der Beurkundung des Kaufvertrages, Restbetrag bei Schlüsselübergabe und Eigentumsübertragung. Bemerkungen Handänderungskosten und Notariatskosten werden je zur Hälfte von Käufer und Verkäufer übernommen. Sämtliche Preisangaben inkl. 8,1% MWST.</p>
-      {{ /partial:layout/span }}
-
-    {{ /partial:layout/grid }}
-
-    {{ /partial:layout/inner }}
 
 {{ /partial:layout/section }}

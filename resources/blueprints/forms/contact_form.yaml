@@ -5,6 +5,32 @@ tabs:
       -
         fields:
           -
+            handle: size
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: Wohnungsgrösse
+              icon: text
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: number
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: Wohnungsnummer
+              icon: text
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
             handle: firstname
             field:
               input_type: text
