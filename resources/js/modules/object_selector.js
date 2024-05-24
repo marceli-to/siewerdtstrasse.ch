@@ -13,6 +13,11 @@ const ObjectSelector = (function() {
   };
 
   const initialize = function() {
+
+    // exit if the elements are not found
+    if (!document.querySelector(selectors.select)) {
+      return;
+    }
     const select = document.querySelector(selectors.select);
     const selection = document.querySelector(selectors.selection);
     const hiddenField = document.querySelector(selectors.hiddenField);
