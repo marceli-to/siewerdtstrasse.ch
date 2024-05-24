@@ -29,8 +29,8 @@
 
         {{ partial:layout/span class="!col-span-full sm:grid sm:grid-cols-12 sm:gap-x-16 lg:!gap-x-20" }}
           <div class="col-span-full md:col-span-6">
-            {{ partial:components/forms/elements/select field="interest" placeholder="Interesse an*" value="{{ old:interest }}" error="{{ error:interest ? true : false }}" }}
-            <input type="hidden" name="interest" value="{{ old:interest }}" required="true" />
+            {{ partial:components/forms/elements/select field="interest" placeholder="Interesse an" value="{{ old:interest }}" error="{{ error:interest ? true : false }}" }}
+            <input type="hidden" name="interest" value="{{ old:interest }}"/>
             <div class="col-span-full flex-wrap mt-6 lg:mt-8 mb-6 lg:mb-8 js-apartment-selection hidden"></div>
           </div>
         {{ /partial:layout/span }}
