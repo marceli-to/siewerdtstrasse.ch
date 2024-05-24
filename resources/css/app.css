@@ -17,10 +17,23 @@ main {
   @apply flex-1;
 }
 
+.imprint h1,
+.privacy h1,
 .imprint h2,
 .privacy h2 {
-  @apply text-base lg:text-xl
+  @apply text-base lg:text-xl text-mint mb-10
 }
+
+.imprint h1,
+.privacy h1 {
+  @apply mb-10 lg:mb-20
+}
+
+.imprint h2,
+.privacy h2 {
+  @apply mb-5 lg:text-lg
+}
+
 
 .privacy p {
   @apply max-w-3xl;
