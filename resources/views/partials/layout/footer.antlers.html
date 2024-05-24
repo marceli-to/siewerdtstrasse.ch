@@ -11,9 +11,24 @@
         8001 Zürich
       </div>
       <div class="sm:col-span-3 md:col-span-6 lg:col-span-3">
-        Telefon 043 537 33 53<br>
-        zoe@cavegn-immobilien.ch<br>
-        www.cavegn-immobilien.ch
+        <a 
+          href="tel:043 537 33 53"
+          class="no-underline hover:underline underline-offset-4">
+          Telefon 043 537 33 53
+        </a><br>
+        <a 
+          href="mailto:zoe@cavegn-immobilien.ch" 
+          title="E-Mail an zoe@cavegn-immobilien.ch"
+          class="no-underline hover:underline underline-offset-4">
+          zoe@cavegn-immobilien.ch
+        </a><br>
+        <a href="https://www.cavegn-immobilien.ch" 
+          target="_blank" 
+          title="Zur Website von Cavegn Immobilien" 
+          rel="noopener noreferrer"
+          class="no-underline hover:underline underline-offset-4">
+          www.cavegn-immobilien.ch
+        </a>
       </div>
     </div>
     <div class="col-span-3 col-start-3 sm:col-span-5 sm:col-start-3 md:col-span-3 lg:col-span-2 lg:mb-15">
@@ -27,8 +42,8 @@
       </a>
     </div>
     <div class="col-span-3 sm:col-span-5 md:col-span-3 md:col-start-10 lg:col-start-11 lg:mb-20">
-      <a href="/impressum">Impressum</a><br>
-      <a href="/datenschutz">Datenschutz</a><br>
+      <a href="/impressum" class="no-underline hover:underline underline-offset-4">Impressum</a><br>
+      <a href="/datenschutz" class="no-underline hover:underline underline-offset-4">Datenschutz</a><br>
     </div>
   </div>
   {{ /partial:layout/inner }}
