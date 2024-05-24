@@ -3,4 +3,5 @@
   name="{{ field }}"
   value="{{ value }}"
   placeholder="{{ placeholder }}"
-  class="bg-mint rounded-sm p-8 w-full outline-none !ring-0 focus:ring-0 !border-none text-white placeholder:text-white {{ error ? 'placeholder:text-red-600 focus:placeholder:text-white' : ''}}">
+  required="{{ required }}"
+  class="bg-mint rounded-sm p-8 w-full outline-none !ring-0 focus:ring-0 !border-none text-white placeholder:text-white {{ error ? 'bg-red-600' : ''}} valid:!bg-mint">

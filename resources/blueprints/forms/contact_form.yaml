@@ -5,25 +5,12 @@ tabs:
       -
         fields:
           -
-            handle: size
+            handle: interest
             field:
               input_type: text
               antlers: false
               type: text
-              display: Wohnungsgrösse
-              icon: text
-              listable: hidden
-              instructions_position: above
-              visibility: visible
-              replicator_preview: true
-              hide_display: false
-          -
-            handle: number
-            field:
-              input_type: text
-              antlers: false
-              type: text
-              display: Wohnungsnummer
+              display: Interesse
               icon: text
               listable: hidden
               instructions_position: above
