@@ -29,6 +29,9 @@ const Iso = (function() {
       object.addEventListener('mouseover', function() {
         highlightIso(object);
       });
+      object.addEventListener('click', function() {
+        highlightIso(object);
+      });
       // Add mouseout event listener for selectors.object
       object.addEventListener('mouseout', function() {
         clearIso();
@@ -37,10 +40,17 @@ const Iso = (function() {
 
     // Event listeners for 'selectors.iso'
     document.querySelectorAll(selectors.iso).forEach(function(iso) {
-      // Add mouseover event listener for selectors.iso
-      iso.addEventListener('mouseover', function() {
+      // Add touch-start event listener for selectors.iso
+      iso.addEventListener('touchstart', function() {
         hightlightRow(iso);
       });
+
+      // Add touch-end event listener for selectors.iso
+      iso.addEventListener('touchend', function() {
+        clearRow();
+        clearIso();
+      });
+
       // Add mouseout event listener for selectors.iso
       iso.addEventListener('mouseout', function() {
         clearRow();
@@ -55,25 +65,27 @@ const Iso = (function() {
     const objectData = object.dataset;
 
     // get iso item data-iso="data.objectNumber" within data-iso-building="data.objectBuilding"
-    const iso = document.querySelector('[data-iso="' + objectData.objectNumber + '"]');
+    const isos = document.querySelectorAll('[data-iso="' + objectData.objectNumber + '"]');
 
-    // add class '.is-active.is-available' to iso item if it exists
-    if (!iso) return;
-    iso.classList.add('is-active', objectData.objectState === 'available' ? 'is-available' : 'is-taken');
+    isos.forEach(function(iso) {
 
+      // add class '.is-active.is-available' to iso item if it exists
+      if (!iso) return;
+      iso.classList.add('is-active', objectData.objectState === 'available' ? 'is-available' : 'is-taken');
 
-    if (moveSiblings) {
-      // Get the parent <g> element for the object
-      const parent = iso.parentElement;
+      if (moveSiblings) {
+        // Get the parent <g> element for the object
+        const parent = iso.parentElement;
 
-      // find all siblings of the parent <g> element that are after it
-      const nextSiblings = getNextSiblings(parent);
+        // find all siblings of the parent <g> element that are after it
+        const nextSiblings = getNextSiblings(parent);
 
-      // add styles to translate the parent <g> elements siblings
-      nextSiblings.forEach(function(sibling) {
-        sibling.classList.add('is-up')
-      });
-    }
+        // add styles to translate the parent <g> elements siblings
+        nextSiblings.forEach(function(sibling) {
+          sibling.classList.add('is-up')
+        });
+      }
+    });
   };
 
   const hightlightRow = function(iso) {
