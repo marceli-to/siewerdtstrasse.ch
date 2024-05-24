@@ -40,6 +40,10 @@ const Iso = (function() {
 
     // Event listeners for 'selectors.iso'
     document.querySelectorAll(selectors.iso).forEach(function(iso) {
+      iso.addEventListener('mouseover', function() {
+        hightlightRow(iso);
+      });
+
       // Add touch-start event listener for selectors.iso
       iso.addEventListener('touchstart', function() {
         hightlightRow(iso);
