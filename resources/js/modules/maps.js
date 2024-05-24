@@ -23,7 +23,7 @@ const initMap = () => {
         coordinates: [8.549060044180237,47.412181699087625]
       },
       properties: {
-        title: 'ZOE Siewerdtstrasse Oerlikon',
+        title: 'ZOE Oerlikon',
         description: 'Pfäffikon ZH'
       }
     }]

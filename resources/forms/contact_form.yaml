@@ -4,9 +4,9 @@ email:
   -
     id: lv2hk7hm
     to: m@marceli.to
-    from: no-reply@siewerdtstrasse.ch.local
-    reply_to: no-reply@siewerdtstrasse.ch.local
-    subject: 'Kontaktformular siewerdtstrasse.ch'
+    from: no-reply@zoe-oerlikon.ch.local
+    reply_to: no-reply@zoe-oerlikon.ch.local
+    subject: 'Kontaktformular zoe-oerlikon.ch'
     mailer: smtp
     html: email/html/contact
     text: email/text/contact
