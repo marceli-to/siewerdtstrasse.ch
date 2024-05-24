@@ -1,6 +1,6 @@
 {{ partial:layout/section }}
 
-  {{ partial:components/media/visual image="zoe-siewerdstrasse-5" alt="" }}
+  {{ partial:components/media/visual image="zoe-siewerdstrasse-3" alt="" }}
 
 {{ /partial:layout/section }}
 
@@ -32,12 +32,33 @@
 {{ /partial:layout/section }}
 
 {{ partial:layout/section }}
+
+  {{ partial:layout/inner }}
+
+    <a name="visualisierungen" class="scroll-m-96 lg:scroll-m-144"></a>
+    {{ partial:components/headings/h2 title="Visualisierungen" }}
+
+    <div class="sm:grid sm:grid-cols-12 sm:gap-15 lg:gap-20">
+      {{ partial:components/fancybox/item image="/assets/zoe-siewerdstrasse-1" alt="" }}
+      {{ partial:components/fancybox/item image="/assets/zoe-siewerdstrasse-2" alt="" }}
+      {{ partial:components/fancybox/item image="/assets/zoe-siewerdstrasse-3" alt="" }}
+      {{ partial:components/fancybox/item image="/assets/zoe-siewerdstrasse-4" alt="" }}
+      {{ partial:components/fancybox/item image="/assets/zoe-siewerdstrasse-6" alt="" }}
+      {{ partial:components/fancybox/item image="/assets/zoe-siewerdstrasse-11" alt="" }}
+      {{ partial:components/fancybox/item image="/assets/zoe-siewerdstrasse-12" alt="" }}
+    </div>
+
+  {{ /partial:layout/inner }}
+
+{{ /partial:layout/section }}
+
+{{# {{ partial:layout/section }}
   {{ partial:components/swiper/wrapper }}
     {{ partial:components/swiper/slide image="zoe-siewerdstrasse-1" alt="" }}
     {{ partial:components/swiper/slide image="zoe-siewerdstrasse-2" alt="" }}
     {{ partial:components/swiper/slide image="zoe-siewerdstrasse-3" alt="" }}
   {{ /partial:components/swiper/wrapper }}
-{{ /partial:layout/section }}
+{{ /partial:layout/section }} #}}
 
 {{ partial:layout/section class="bg-mint text-white" }}
   {{ partial:layout/inner }}

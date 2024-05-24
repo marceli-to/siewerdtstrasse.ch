@@ -9,6 +9,10 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --swiper-navigation-size: 32px;
+}
+
 main {
   @apply flex-1;
 }
