@@ -4,8 +4,8 @@ email:
   -
     id: lv2hk7hm
     to: m@marceli.to
-    from: no-reply@zoe-oerlikon.ch.local
-    reply_to: no-reply@zoe-oerlikon.ch.local
+    from: no-reply@zoe-oerlikon.ch
+    reply_to: no-reply@zoe-oerlikon.ch
     subject: 'Kontaktformular zoe-oerlikon.ch'
     mailer: smtp
     html: email/html/contact-owner
