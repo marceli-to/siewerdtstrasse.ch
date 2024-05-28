@@ -8,5 +8,14 @@ email:
     reply_to: no-reply@zoe-oerlikon.ch.local
     subject: 'Kontaktformular zoe-oerlikon.ch'
     mailer: smtp
-    html: email/html/contact
-    text: email/text/contact
+    html: email/html/contact-owner
+    text: email/text/contact-owner
+  -
+    id: lwq9kyrs
+    to: '{{ email }}'
+    from: no-reply@zoe-oerlikon.ch
+    reply_to: no-reply@zoe-oerlikon.ch
+    subject: 'Kontaktformular zoe-oerlikon.ch'
+    html: email/html/contact-user
+    text: email/text/contact-user
+    mailer: smtp

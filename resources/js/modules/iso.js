@@ -68,6 +68,23 @@ const Iso = (function() {
     // get data set
     const objectData = object.dataset;
 
+
+    if (objectData.objectNumber == '5/601') {
+      const isos = document.querySelectorAll('[data-iso="' + objectData.objectNumber + '"]');
+      isos.forEach(function(iso) {
+        if (!iso) return;
+        iso.classList.remove('hidden');
+        iso.classList.add('is-active', objectData.objectState === 'available' ? 'is-available' : 'is-taken');
+
+        // get iso item 'data-iso-floor="dach"'
+        const floor = document.querySelector('[data-iso-floor="dach"]');
+        if (!floor) return;
+        floor.classList.add('is-up')
+      });
+
+      return;
+    }
+
     // get iso item data-iso="data.objectNumber" within data-iso-building="data.objectBuilding"
     const isos = document.querySelectorAll('[data-iso="' + objectData.objectNumber + '"]');
 
@@ -115,6 +132,13 @@ const Iso = (function() {
       siblings.forEach(function(sibling) {
         sibling.classList.remove('is-up');
       });
+    });
+
+    // get iso 'data-iso="5/601"' and add class 'hidden'
+    const isos = document.querySelectorAll('[data-iso="5/601"]');
+    isos.forEach(function(iso) {
+      if (!iso) return;
+      iso.classList.add('hidden');
     });
   };
 

@@ -43,10 +43,9 @@ export default {
         '2xl': '1.75rem', // 28px
         '3xl': '2.125rem', // 34px
 
-
-        '5xl': '4.5rem', // 72px
-        '6xl': '8rem', // 128px
-        '7xl': '9.25rem', // 148px
+        // 5lx, 82px in rem
+        '5xl': '5.125rem', // 82px
+        '6xl': '8.75rem', // 140px
       },
       
       zIndex: {
