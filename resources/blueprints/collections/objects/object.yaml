@@ -87,19 +87,6 @@ tabs:
               replicator_preview: true
               hide_display: false
           -
-            handle: space_net
-            field:
-              input_type: text
-              antlers: false
-              type: text
-              display: NWF
-              icon: text
-              listable: hidden
-              instructions_position: above
-              visibility: visible
-              replicator_preview: true
-              hide_display: false
-          -
             handle: space_gross
             field:
               input_type: text
