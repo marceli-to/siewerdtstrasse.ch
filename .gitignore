@@ -22,7 +22,8 @@ public/robots.txt
 public/.htaccess
 INSTALL.txt
 
-#public/assets
-#resources/users
-#users
-#storage/forms/contact_form
+content/*
+public/assets
+resources/users
+users
+storage/forms/contact_form
