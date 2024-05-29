@@ -31,9 +31,15 @@
               {{ price | format_number(0, '.', '\'') }}
             {{ /partial:components/table/tcell }}
             {{ partial:components/table/tcell class="text-center" }}
+            {{ if number == '5/601' }}
+              <a href="/assets/downloads/zoe-siewerdtstrasse-wohnung_501_601.pdf" target="_blank" title="Download Grundriss Objekt {{ number }}">
+                {{ partial:icons/download }}
+              </a>
+            {{ else }}
               <a href="/assets/downloads/zoe-siewerdtstrasse-wohnung_{{ number }}.pdf" target="_blank" title="Download Grundriss Objekt {{ number }}">
                 {{ partial:icons/download }}
               </a>
+            {{ /if }}
             {{ /partial:components/table/tcell }}
               {{ partial:components/table/tcell class="text-xxs sm:text-sm text-right align-middle !pr-0" }}
                 {{ if state == 'available' }}
