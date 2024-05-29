@@ -34,9 +34,12 @@ main {
   @apply mb-5 lg:text-lg
 }
 
-
 .privacy p {
   @apply max-w-3xl;
+}
+
+.privacy a {
+  @apply text-mint underline hover:no-underline underline-offset-2;
 }
 
 p {
@@ -61,7 +64,7 @@ main ul:last-child {
 }
 
 main ul li {
-  @apply list-item ml-20
+  @apply list-item ml-16
 }
 
 sub,
