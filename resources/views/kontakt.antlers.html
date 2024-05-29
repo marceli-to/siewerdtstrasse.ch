@@ -56,7 +56,7 @@
         {{ /partial:layout/span }}
 
         {{ partial:layout/span }}
-          {{ partial:components/forms/elements/field field="phone" required="true" placeholder="Telefon*" }}
+          {{ partial:components/forms/elements/field field="phone" required="true" placeholder="Telefon*" value="{{ old:phone }}" error="{{ error:phone ? true : false }}" }}
         {{ /partial:layout/span }}
 
         {{ partial:layout/span class="!col-span-full" }}
