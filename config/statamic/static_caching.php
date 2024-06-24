@@ -81,7 +81,7 @@ return [
 
         'rules' => [
           'collections' => [
-            'pages' => [
+            'objects' => [
               'urls' => [
                 '/*',
               ]
