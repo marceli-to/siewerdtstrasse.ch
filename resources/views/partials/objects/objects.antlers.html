@@ -28,7 +28,11 @@
               {{ space_outer }}
             {{ /partial:components/table/tcell }}
             {{ partial:components/table/tcell class="text-right" }}
+            {{ if state == 'available' }}
               {{ price | format_number(0, '.', '\'') }}
+            {{ else }}
+              – 
+            {{ /if }}
             {{ /partial:components/table/tcell }}
             {{ partial:components/table/tcell class="text-center" }}
             {{ if number == '5/601' }}
