@@ -1,0 +1,89 @@
+title: 'News Beitrag'
+fields:
+  -
+    handle: news_date
+    field:
+      mode: single
+      inline: false
+      full_width: false
+      columns: 1
+      rows: 1
+      time_enabled: false
+      time_seconds_enabled: false
+      type: date
+      display: Datum
+      icon: date
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    handle: news_title
+    field:
+      input_type: text
+      antlers: false
+      type: text
+      display: Titel
+      icon: text
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    handle: news_text
+    field:
+      buttons:
+        - h3
+        - bold
+        - unorderedlist
+        - removeformat
+        - anchor
+      smart_typography: false
+      save_html: false
+      inline: false
+      toolbar_mode: fixed
+      reading_time: false
+      word_count: false
+      fullscreen: true
+      allow_source: true
+      enable_input_rules: true
+      enable_paste_rules: true
+      remove_empty_nodes: false
+      antlers: false
+      link_noopener: true
+      link_noreferrer: true
+      target_blank: false
+      link_collections:
+        - pages
+      container: assets
+      always_show_set_button: false
+      collapse: false
+      previews: true
+      type: bard
+      display: Text
+      icon: bard
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    handle: news_images
+    field:
+      mode: list
+      container: assets
+      restrict: false
+      allow_uploads: true
+      show_filename: true
+      show_set_alt: true
+      type: assets
+      display: Bilder
+      icon: assets
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+      folder: news

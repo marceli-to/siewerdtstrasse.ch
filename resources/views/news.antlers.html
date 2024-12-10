@@ -1,0 +1,32 @@
+
+{{ partial:layout/section class="bg-mint text-white" }}
+  {{ partial:layout/inner }}
+
+  {{ partial:components/headings/h1 title="News" class="!mt-20" innerClass="!top-0 !left-0" }}
+
+    {{ partial:layout/grid }}
+
+    {{ page_elements }}
+      {{ if type == 'news_entry' }}
+        {{ partial:layout/span }}
+          <div><strong>{{ news_date | iso_format("DD.MM.YYYY") }}</strong></div>
+          {{ partial:components/headings/h2 title="{{ news_title }}" class="text-white" }}
+          {{ news_text}}
+        {{ /partial:layout/span }}
+
+        {{ partial:layout/span class="flex flex-col gap-y-16 lg:gap-y-32 !mb-40 sm:!mb-0" }}
+          {{ if news_images}}
+            {{ news_images }}
+              {{ partial:components/media/responsive-image image="{{ url }}" alt="" preset="webp" sizes="['lg', 'xl']" }}
+            {{ /news_images }}
+          {{ /if }}
+        {{ /partial:layout/span }}
+      {{ /if }}
+    {{ /page_elements }}
+
+
+    {{ /partial:layout/grid }}
+
+  {{ /partial:layout/inner }}
+
+{{ /partial:layout/section }}
