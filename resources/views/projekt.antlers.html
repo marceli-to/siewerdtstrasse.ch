@@ -1,9 +1,40 @@
 {{ partial:layout/section }}
   {{ partial:misc/badge }}
   {{ partial:components/swiper/wrapper }}
-    {{ partial:components/swiper/slide image="zoe-siewerdtstrasse-cam-3" alt="" }}
-    {{ partial:components/swiper/slide image="zoe-siewerdtstrasse-cam-4" alt="" }}
-    {{ partial:components/swiper/slide image="zoe-siewerdtstrasse-5" alt="" }}
+
+  {{ partial:components/swiper/slide }}
+    <figure>
+      <picture>
+        <source media="(min-width: 1200px)" srcset="/assets/zoe-siewerdtstrasse-cam-3.jpg">        
+        <source media="(min-width: 768px)" srcset="/assets/zoe-siewerdtstrasse-cam-3-md.jpg">
+        <source srcset="/assets/zoe-siewerdtstrasse-cam-3-sm.jpg">
+        <img src="/assets/zoe-siewerdtstrasse-cam-3-sm.jpg" alt="" title="" height="1600" width="900">
+      </picture>
+    </figure>
+  {{ /partial:components/swiper/slide }}
+
+  {{ partial:components/swiper/slide }}
+    <figure>
+      <picture>
+        <source media="(min-width: 1200px)" srcset="/assets/zoe-siewerdtstrasse-cam-4.jpg">        
+        <source media="(min-width: 768px)" srcset="/assets/zoe-siewerdtstrasse-cam-4-md.jpg">
+        <source srcset="/assets/zoe-siewerdtstrasse-cam-4-sm.jpg">
+        <img src="/assets/zoe-siewerdtstrasse-cam-4-sm.jpg" alt="" title="" height="1600" width="900">
+      </picture>
+    </figure>
+  {{ /partial:components/swiper/slide }}
+
+  {{ partial:components/swiper/slide }}
+    <figure>
+      <picture>
+        <source media="(min-width: 1200px)" srcset="/assets/zoe-siewerdtstrasse-5.jpg">        
+        <source media="(min-width: 768px)" srcset="/assets/zoe-siewerdtstrasse-5-md.jpg">
+        <source srcset="/assets/zoe-siewerdtstrasse-5-sm.jpg">
+        <img src="/assets/zoe-siewerdtstrasse-cam-5-sm.jpg" alt="" title="" height="1600" width="900">
+      </picture>
+    </figure>
+  {{ /partial:components/swiper/slide }}  
+
   {{ /partial:components/swiper/wrapper }}
 {{ /partial:layout/section }}
 

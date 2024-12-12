@@ -87,3 +87,59 @@ fields:
       replicator_preview: true
       hide_display: false
       folder: news
+  -
+    handle: video_type
+    field:
+      options:
+        external: Youtube/Vimdeo
+        internal: MP4
+      taggable: false
+      push_tags: false
+      multiple: false
+      clearable: false
+      searchable: true
+      cast_booleans: false
+      type: select
+      display: 'Videotyp?'
+      icon: select
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    handle: embed_code
+    field:
+      antlers: false
+      type: textarea
+      display: Einbettungscode
+      icon: textarea
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+      if:
+        video_type: 'equals external'
+  -
+    handle: video_file
+    field:
+      max_files: 1
+      mode: list
+      container: assets
+      folder: news
+      restrict: false
+      allow_uploads: true
+      show_filename: true
+      show_set_alt: true
+      type: assets
+      display: Datei
+      icon: assets
+      instructions: 'Muss vom Format MP4 sein.'
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+      if:
+        video_type: 'equals internal'
