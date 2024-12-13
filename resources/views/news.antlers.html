@@ -49,7 +49,7 @@
               {{ /if }}
 
               {{ if video_type == 'external' && embed_code }}
-                <div class="aspect-video">
+                <div class="aspect-video [&>iframe]:aspect-video [&>iframe]:w-full [&>iframe]:h-auto">
                   {{ embed_code }}
                 </div>
               {{ /if }}
