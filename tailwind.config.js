@@ -21,7 +21,8 @@ export default {
       colors: {
         'mint': '#50BE64',
         'charcoal': '#1e1e1e',
-        'stone': '#8e8e8d'
+        'stone': '#8e8e8d',
+        'burgundy': '#800020',
       },
 
       fontFamily: {
