@@ -91,7 +91,7 @@ fields:
     handle: video_type
     field:
       options:
-        external: Youtube/Vimdeo
+        external: Youtube/Vimeo
         internal: MP4
       taggable: false
       push_tags: false
