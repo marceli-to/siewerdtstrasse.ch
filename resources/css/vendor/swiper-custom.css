@@ -3,7 +3,7 @@
   @apply h-auto w-full
 }
 
-.swiper .swiper-slide.swiper-slide--21-9 {
+.swiper .swiper-slide.swiper-slide--21-9 img {
   @apply aspect-[21/9] object-cover h-full w-full
 }
 
