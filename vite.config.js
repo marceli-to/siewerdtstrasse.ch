@@ -4,6 +4,11 @@ import laravel from 'laravel-vite-plugin';
 import { resolve } from 'path';
 
 export default defineConfig({
+  server: {
+    host: 'localhost',
+    cors: true,
+    origin: 'http://localhost:5174',
+  },
   resolve: {
     alias: {
       img: resolve('resources/img'),
